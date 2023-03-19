@@ -14,8 +14,8 @@ in
     src = fetchFromGitHub {
       owner = "levinericzimmermann";
       repo = name;
-      rev = "9f1d87dbd3f0519dca0d63abe54b3eb6eacdcb19";
-      sha256 = "sha256-0SRzWtf+IWrcaYbT6ySXgJ2IMl7ED2zJttxOsXFC0gw=";
+      rev = "528e5c47577fade937d2918b621822cd71f6a0b9";
+      sha256 = "sha256-yCm4s7DNN3XobEmt8+Zf93jgR1KampQkkMIYSW4feTA=";
     };
     checkInputs = [
       python310Packages.pytest
