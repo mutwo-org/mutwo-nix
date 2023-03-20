@@ -1,10 +1,11 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
 
 let
 
-  python-ranges = import ../python-ranges/default.nix;
-  quicktions = import ../quicktions/default.nix;
+  python-ranges = import ../python-ranges/default.nix {};
+  quicktions = import ../quicktions/default.nix {};
 
 in
 
@@ -16,12 +17,10 @@ in
       rev = "7fc579e123b24c16a63990fb24cae0af635b8f7b";
       sha256 = "sha256-aiyB1xKSH2B/vrhZaYn3Vql/5I/NfVR4u38DztpZDd0=";
     };
-    checkInputs = [
-      python310Packages.pytest
-    ];
+    nativeCheckInputs = [ pytest ];
     propagatedBuildInputs = [ 
-      python310Packages.numpy
-      python310Packages.scipy
+      numpy
+      scipy
       python-ranges
       quicktions
     ];

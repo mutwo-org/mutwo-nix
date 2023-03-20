@@ -1,9 +1,11 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
+
 
 let
 
-  quicktions = import ../quicktions/default.nix;
+  quicktions = import ../quicktions/default.nix {};
 
   sphinx-autodoc-typehints = buildPythonPackage rec {
     name = "sphinx-autodoc-typehints";

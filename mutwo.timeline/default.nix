@@ -1,10 +1,11 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
 
 let
 
-  mutwo-core = import ../mutwo.core/default.nix;
-  python-ranges = import ../python-ranges/default.nix;
+  mutwo-core = import ../mutwo.core/default.nix {};
+  python-ranges = import ../python-ranges/default.nix {};
 
 in
 
@@ -16,7 +17,7 @@ in
       rev = "b6b0864a99f369043d69464e63d22796aeda3c79";
       sha256 = "sha256-jJaTgORcm61DUfePK5/pZ7MiZxCk1knen9ul7c9ZpfI=";
     };
-    checkInputs = [
+    nativeCheckInputs = [
       python310Packages.pytest
     ];
     propagatedBuildInputs = [ 

@@ -1,11 +1,12 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
 
 let
 
-  mutwo-common = import ../mutwo.common/default.nix;
-  epitran = import ../epitran/default.nix;
-  gradient-free-optimizers = import ../gradient-free-optimizers/default.nix;
+  mutwo-common = import ../mutwo.common/default.nix {};
+  epitran = import ../epitran/default.nix {};
+  gradient-free-optimizers = import ../gradient-free-optimizers/default.nix {};
 
 in
 
@@ -17,13 +18,11 @@ in
       rev = "24d4d2c2001431119e64eeb6fd003f287dee58e3";
       sha256 = "sha256-lSjwk1rbFQDfjXQ2yGUqKmye1w1Q4X0gX/ZUi8D/o28=";
     };
-    checkInputs = [
-      python310Packages.pytest
-    ];
+    nativeCheckInputs = [ pytest ];
     propagatedBuildInputs = [ 
-      python310Packages.numpy
-      python310Packages.scipy
-      python310Packages.sympy
+      numpy
+      scipy
+      sympy
       # XXX: Currently nix-build doesn't work with ortools, see
       #   https://discourse.nixos.org/t/ortools-module-not-found-under-nix-shell/14190/7
       # and

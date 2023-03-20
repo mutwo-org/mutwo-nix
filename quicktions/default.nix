@@ -1,4 +1,5 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
 
 buildPythonPackage rec {
@@ -10,7 +11,7 @@ buildPythonPackage rec {
   };
   doCheck = true;
   propagatedBuildInputs = [
-    python310Packages.cython_3
-    python310Packages.codecov
+    cython_3
+    codecov
   ];
 }

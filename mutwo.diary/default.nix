@@ -1,10 +1,10 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
-
 
 let
 
-  mutwo-clock = import ../mutwo.clock/default.nix;
+  mutwo-clock = import ../mutwo.clock/default.nix {};
 
 in
 
@@ -16,13 +16,13 @@ in
       rev = "45e2efa1f42a315b87470b52abf2140fd480d87f";
       sha256 = "sha256-zMqV5nIGap19pR3+/7C1t7G1hPFZCmhlC/nLA9gyOXw=";
     };
-    checkInputs = [
-      python310Packages.pytest
+    nativeCheckInputs = [
+      pytest
     ];
     propagatedBuildInputs = [ 
-      python310Packages.zodb
       mutwo-clock
-      python310Packages.numpy
+      zodb
+      numpy
     ];
     checkPhase = ''
       runHook preCheck

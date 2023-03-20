@@ -1,9 +1,10 @@
-with import <nixpkgs> {};
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+with pkgs;
 with pkgs.python310Packages;
 
 let
 
-  mutwo-music = import ../mutwo.music/default.nix;
+  mutwo-music = import ../mutwo.music/default.nix {};
 
 in
 
@@ -15,9 +16,7 @@ in
       rev = "23331d320fa3957eeac0c12d1b664ad8c3265087";
       sha256 = "sha256-zg0sGbKVGCr0EfgU74FrNP66ljgPB/wVA0Kf4g/aaqQ=";
     };
-    checkInputs = [
-      python310Packages.pytest
-    ];
+    nativeCheckInputs = [ pytest ];
     propagatedBuildInputs = [
       mutwo-music
     ];
