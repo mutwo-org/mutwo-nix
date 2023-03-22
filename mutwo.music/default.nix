@@ -8,15 +8,17 @@ let
   epitran = import ../epitran/default.nix {};
   gradient-free-optimizers = import ../gradient-free-optimizers/default.nix {};
 
+  origin = sources.mutwo-music;
+
 in
 
   buildPythonPackage rec {
-    name = "mutwo.music";
+    name = origin.repo;
     src = fetchFromGitHub {
-      owner = "mutwo-org";
-      repo = name;
-      rev = "24d4d2c2001431119e64eeb6fd003f287dee58e3";
-      sha256 = "sha256-lSjwk1rbFQDfjXQ2yGUqKmye1w1Q4X0gX/ZUi8D/o28=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     nativeCheckInputs = [ pytest ];
     propagatedBuildInputs = [ 

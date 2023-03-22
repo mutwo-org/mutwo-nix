@@ -6,15 +6,17 @@ let
 
   mutwo-music = import ../mutwo.music/default.nix {};
 
+  origin = sources.mutwo-ekmelily;
+
 in
 
   buildPythonPackage rec {
-    name = "mutwo.ekmelily";
+    name = origin.repo;
     src = fetchFromGitHub {
-      owner = "mutwo-org";
-      repo = name;
-      rev = "23331d320fa3957eeac0c12d1b664ad8c3265087";
-      sha256 = "sha256-zg0sGbKVGCr0EfgU74FrNP66ljgPB/wVA0Kf4g/aaqQ=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     nativeCheckInputs = [ pytest ];
     propagatedBuildInputs = [

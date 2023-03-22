@@ -7,15 +7,17 @@ let
 
   pyo = import ../pyo/default.nix {};
 
+  origin = sources.walkman;
+
 in
 
   buildPythonPackage rec {
     name = "audiowalkman";
     src = fetchFromGitHub {
-      owner = "audiowalkman";
-      repo = "walkman";
-      rev = "db6ac87453b5136b9fa799bdcad06d738a68a4aa";
-      sha256 = "sha256-k9PfLmIr8tXCugsyPzFeCGZ0bDIpy0D+nvPiARP9h7Q=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     propagatedBuildInputs = [ 
       pyo

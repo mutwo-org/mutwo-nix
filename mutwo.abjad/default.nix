@@ -16,15 +16,17 @@ let
   # Fix Fontconfig error: Can't find cache
   fontsCache= makeFontsCache {};
 
+  origin = sources.mutwo-abjad;
+
 in
 
   buildPythonPackage rec {
-    name = "mutwo.abjad";
+    name = origin.repo;
     src = fetchFromGitHub {
-      owner = "mutwo-org";
-      repo = name;
-      rev = "cb599f49777040c3d5d69bf347b19fa229fa87db";
-      sha256 = "sha256-u9fP3YuSZF/5CyJTNOi20bUJp1Y6MujX8KVGTwmW/mI=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     nativeCheckInputs = [
       pytest

@@ -9,15 +9,17 @@ let
   mutwo-abjad = import ../mutwo.abjad/default.nix {};
   treelib = import ../treelib/default.nix {};
 
+  origin = sources.mutwo-clock;
+
 in
 
   buildPythonPackage rec {
-    name = "mutwo.clock";
+    name = origin.repo;
     src = fetchFromGitHub {
-      owner = "levinericzimmermann";
-      repo = name;
-      rev = "3c1454034f0e2fb2a23d47a23de83ae38216dadc";
-      sha256 = "sha256-IAbn5dqYhCgp+BvUwE/6Bs7FLVz55wcXyIyIoTNhmls=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     nativeCheckInputs = [
       pytest
