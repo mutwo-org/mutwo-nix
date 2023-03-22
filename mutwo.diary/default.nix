@@ -13,8 +13,8 @@ in
     src = fetchFromGitHub {
       owner = "levinericzimmermann";
       repo = name;
-      rev = "32d8b57d04ca195b32a933521cefa59db88565c2";
-      sha256 = "sha256-xGjcAR0BloX77M02zspz35/DPjmT1PVb9305X7cR0Xk=";
+      rev = "f4a6dee2cd093de6e4f387fd45d9bdb21ba607c9";
+      sha256 = "sha256-fnCpntTEdqjHXmu1HC3o1NKv31V39SmXl3skHZOJqCg=";
     };
     nativeCheckInputs = [
       pytest
