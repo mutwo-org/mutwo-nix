@@ -23,6 +23,18 @@
         "url": "https://github.com/levinericzimmermann/mutwo.clock/archive/79bb95454e8fc27289f69518a79940d98af70172.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-common": {
+        "branch": "main",
+        "description": "Common generators extension for event based framework for generative art",
+        "homepage": null,
+        "owner": "mutwo-org",
+        "repo": "mutwo.common",
+        "rev": "4adb24d52f4a8f86e298da01c84082259c93fc23",
+        "sha256": "004hvfm2w93d5p0vsnaksryw32w9bjpxq1psgakia612hhswrvnw",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.common/archive/4adb24d52f4a8f86e298da01c84082259c93fc23.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-diary": {
         "branch": "main",
         "description": "apply diary metaphor for music writing",
