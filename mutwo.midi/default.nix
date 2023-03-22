@@ -6,7 +6,7 @@ let
 
   mutwo-music = import ../mutwo.music/default.nix {};
 
-  origin = sources.mutwo-ekmelily;
+  origin = sources.mutwo-midi;
 
 in
 
