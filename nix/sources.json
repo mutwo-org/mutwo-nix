@@ -96,15 +96,15 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
-        "branch": "master",
+        "branch": "levin",
         "description": "Nix Packages collection",
         "homepage": "",
-        "owner": "NixOS",
+        "owner": "levinericzimmermann",
         "repo": "nixpkgs",
-        "rev": "dce79b3cb10bc8b1a9625a9c764512b6a27d9ad5",
-        "sha256": "1b8wr2p504vniyxqi9pa4rcih5r4csr4cvw75zvrdbdij55n72db",
+        "rev": "3a42efd0ac32cfa1598f0e5cf97e45a4d4b72fbf",
+        "sha256": "0xzfp3lbv8gnmnxbs5g5qkj97xjvavyyhn21mxrzjhn7ggrdlas5",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/dce79b3cb10bc8b1a9625a9c764512b6a27d9ad5.tar.gz",
+        "url": "https://github.com/levinericzimmermann/nixpkgs/archive/3a42efd0ac32cfa1598f0e5cf97e45a4d4b72fbf.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "walkman": {
