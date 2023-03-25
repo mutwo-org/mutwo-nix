@@ -33,6 +33,11 @@ in
       pillow
       lilypond-with-fonts
     ];
+    checkInputs = [
+      pytest
+      pillow
+      lilypond-with-fonts
+    ];
     propagatedBuildInputs = [
       abjad
       abjad-ext-nauert

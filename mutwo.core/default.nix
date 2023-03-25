@@ -18,6 +18,7 @@ in
       sha256 = "sha256-aiyB1xKSH2B/vrhZaYn3Vql/5I/NfVR4u38DztpZDd0=";
     };
     nativeCheckInputs = [ pytest ];
+    checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
       numpy
       scipy

@@ -22,6 +22,7 @@ in
       sha256 = origin.sha256;
     };
     nativeCheckInputs = [ pytest ];
+    checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
       treelib
       numpy

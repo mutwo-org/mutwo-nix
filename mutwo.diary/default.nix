@@ -20,6 +20,9 @@ in
     nativeCheckInputs = [
       pytest
     ];
+    checkInputs = [
+      pytest
+    ];
     propagatedBuildInputs = [ 
       mutwo-clock
       zodb

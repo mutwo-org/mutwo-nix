@@ -25,12 +25,16 @@ in
       pytest
       lilypond-with-fonts
     ];
+    checkInputs = [
+      pytest
+      lilypond-with-fonts
+    ];
     propagatedBuildInputs = [ 
       mutwo-timeline
       mutwo-abjad
       lilypond-with-fonts
       treelib
-      python310Packages.numpy
+      numpy
     ];
     checkPhase = ''
       runHook preCheck

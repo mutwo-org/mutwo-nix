@@ -20,7 +20,10 @@ in
       sha256 = origin.sha256;
     };
     nativeCheckInputs = [
-      python310Packages.pytest
+      pytest
+    ];
+    checkInputs = [
+      pytest
     ];
     propagatedBuildInputs = [ 
       python310Packages.numpy

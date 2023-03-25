@@ -21,6 +21,9 @@ in
     nativeCheckInputs = [
       pytest
     ];
+    checkInputs = [
+      pytest
+    ];
     propagatedBuildInputs = [
       mutwo-music
       mido

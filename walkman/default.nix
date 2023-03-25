@@ -29,6 +29,9 @@ in
     nativeCheckInputs = [
       pytest
     ];
+    checkInputs = [
+      pytest
+    ];
     doCheck = true;
     checkPhase = ''
       runHook preCheck
