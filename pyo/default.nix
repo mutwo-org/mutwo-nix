@@ -28,6 +28,6 @@ buildPythonPackage rec {
     libogg
     libvorbis
     # Other pyo dependencies
-    wxPython_4_1
+    wxPython_4_2
   ];
 }
