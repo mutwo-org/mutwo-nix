@@ -7,15 +7,17 @@ let
   python-ranges = import ../python-ranges/default.nix {};
   quicktions = import ../quicktions/default.nix {};
 
+  origin = sources.mutwo-core;
+
 in
 
   buildPythonPackage rec {
     name = "mutwo.core";
     src = fetchFromGitHub {
-      owner = "mutwo-org";
-      repo = name;
-      rev = "7fc579e123b24c16a63990fb24cae0af635b8f7b";
-      sha256 = "sha256-aiyB1xKSH2B/vrhZaYn3Vql/5I/NfVR4u38DztpZDd0=";
+      owner = origin.owner;
+      repo = origin.repo;
+      rev = origin.rev;
+      sha256 = origin.sha256;
     };
     nativeCheckInputs = [ pytest ];
     checkInputs = [ pytest ];

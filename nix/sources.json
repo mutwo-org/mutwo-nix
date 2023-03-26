@@ -35,6 +35,18 @@
         "url": "https://github.com/mutwo-org/mutwo.common/archive/4adb24d52f4a8f86e298da01c84082259c93fc23.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-core": {
+        "branch": "main",
+        "description": "core library of mutwo: event based library for composing music or other time-based arts in python",
+        "homepage": "https://mutwo.readthedocs.io/en/latest/",
+        "owner": "mutwo-org",
+        "repo": "mutwo.core",
+        "rev": "a53952a5bf2ff9151117c250d542704b47b28dd0",
+        "sha256": "13ydxyrk2m9cmxnml6r8cjlzkyxxdp1ddsaf8zx0cc2cxdv7pdqv",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.core/archive/a53952a5bf2ff9151117c250d542704b47b28dd0.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-diary": {
         "branch": "main",
         "description": "apply diary metaphor for music writing",
