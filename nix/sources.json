@@ -53,10 +53,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.csound",
-        "rev": "0c90b780fdaf0bbd852e175cf93f716e7493610f",
-        "sha256": "0yr7jzc58shjfnm2scn32q8vx2lq17m52xyp81f5bh10lbyfbvbn",
+        "rev": "a82d32f34c9a6c62b4c51b30d49e530f67d5a89a",
+        "sha256": "0hs2rk0zz58kn15z3lflcdw6glk3gls3pc65dml0b5pxc2cdin2v",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.csound/archive/0c90b780fdaf0bbd852e175cf93f716e7493610f.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.csound/archive/a82d32f34c9a6c62b4c51b30d49e530f67d5a89a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-diary": {
