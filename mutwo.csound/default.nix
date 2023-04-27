@@ -17,8 +17,14 @@ in
       rev = origin.rev;
       sha256 = origin.sha256;
     };
-    nativeCheckInputs = [ pytest ];
-    checkInputs = [ pytest ];
+    nativeCheckInputs = [
+        csound
+        pytest
+    ];
+    checkInputs = [
+        csound
+        pytest
+    ];
     propagatedBuildInputs = [ 
       csound
       mutwo-core
