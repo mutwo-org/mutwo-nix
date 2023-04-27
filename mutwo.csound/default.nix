@@ -20,6 +20,7 @@ in
     nativeCheckInputs = [ pytest ];
     checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
+      csound
       mutwo-core
       natsort
     ];
