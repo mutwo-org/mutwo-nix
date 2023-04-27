@@ -47,6 +47,18 @@
         "url": "https://github.com/mutwo-org/mutwo.core/archive/470a5dcae026062c638c1079e0a0b1396c602344.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-csound": {
+        "branch": "main",
+        "description": "Csound extension for event based library mutwo.",
+        "homepage": "",
+        "owner": "mutwo-org",
+        "repo": "mutwo.csound",
+        "rev": "0c90b780fdaf0bbd852e175cf93f716e7493610f",
+        "sha256": "0yr7jzc58shjfnm2scn32q8vx2lq17m52xyp81f5bh10lbyfbvbn",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.csound/archive/0c90b780fdaf0bbd852e175cf93f716e7493610f.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-diary": {
         "branch": "main",
         "description": "apply diary metaphor for music writing",
