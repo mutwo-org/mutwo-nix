@@ -1,4 +1,16 @@
 {
+    "essentia": {
+        "branch": "master",
+        "description": "C++ library for audio and music analysis, description and synthesis, including Python bindings",
+        "homepage": "http://essentia.upf.edu",
+        "owner": "MTG",
+        "repo": "essentia",
+        "rev": "ed59cc48e37ac33ac15b252fc5ad7af4b9ecd51d",
+        "sha256": "0gpq7qskig8crnxg2ymi2jv4924kpm6phs8zscbyannyxvvcwlhn",
+        "type": "tarball",
+        "url": "https://github.com/MTG/essentia/archive/6fa440fd7fb3019319f071dbec29ba996bc7e410.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-abjad": {
         "branch": "main",
         "description": "Abjad extension for event based library mutwo",
