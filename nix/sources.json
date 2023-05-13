@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "levinericzimmermann",
         "repo": "mutwo.clock",
-        "rev": "5eb13abe4d19bbcfd0d8b5b111d7dfa0c6d16738",
-        "sha256": "0xrkgj01g6kz4g1h0aqkaid8ci964w5fgs667cl85dcqnywdyca3",
+        "rev": "2992bd09eeb98a3f0900d75e42bc0d3c134d7a19",
+        "sha256": "0pg7g5px7lfwvyqvwij5rmjrz7mcq1550a137fq0xhj6mf452c6c",
         "type": "tarball",
-        "url": "https://github.com/levinericzimmermann/mutwo.clock/archive/5eb13abe4d19bbcfd0d8b5b111d7dfa0c6d16738.tar.gz",
+        "url": "https://github.com/levinericzimmermann/mutwo.clock/archive/2992bd09eeb98a3f0900d75e42bc0d3c134d7a19.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-common": {
@@ -125,10 +125,10 @@
         "homepage": null,
         "owner": "mutwo-org",
         "repo": "mutwo.timeline",
-        "rev": "836b2d3d94c3e9ae6b741ef259b9d4f86354a91a",
-        "sha256": "0bqi9by62475x97ak456ia7n5z72wwwcb17r99qan60mg31684lb",
+        "rev": "c428bd2dc89bea36063b265477b12a2f043be49e",
+        "sha256": "1yn7l0nmnd1xhp2vkfzffhd5v9s9406lgbx5gs6zdbmky7y2q7h4",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/836b2d3d94c3e9ae6b741ef259b9d4f86354a91a.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/c428bd2dc89bea36063b265477b12a2f043be49e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
