@@ -125,10 +125,10 @@
         "homepage": null,
         "owner": "mutwo-org",
         "repo": "mutwo.timeline",
-        "rev": "c428bd2dc89bea36063b265477b12a2f043be49e",
-        "sha256": "1yn7l0nmnd1xhp2vkfzffhd5v9s9406lgbx5gs6zdbmky7y2q7h4",
+        "rev": "9d067cb475554b74ffdfe83c4017eeebd40a999d",
+        "sha256": "1xl1zcwdia1wl08l7594kwfir001gnj3s9qcsp8048br2r3pip44",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/c428bd2dc89bea36063b265477b12a2f043be49e.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/9d067cb475554b74ffdfe83c4017eeebd40a999d.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
