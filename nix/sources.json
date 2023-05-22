@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "levinericzimmermann",
         "repo": "mutwo.clock",
-        "rev": "2992bd09eeb98a3f0900d75e42bc0d3c134d7a19",
-        "sha256": "0pg7g5px7lfwvyqvwij5rmjrz7mcq1550a137fq0xhj6mf452c6c",
+        "rev": "b8d2367e58cae4159cfe597371bdf3dbc01ce45b",
+        "sha256": "1qq89x3cz6wqnwpxdryhkpkgz0fs1anw1szfa44fxqns7ld6vl0r",
         "type": "tarball",
-        "url": "https://github.com/levinericzimmermann/mutwo.clock/archive/2992bd09eeb98a3f0900d75e42bc0d3c134d7a19.tar.gz",
+        "url": "https://github.com/levinericzimmermann/mutwo.clock/archive/b8d2367e58cae4159cfe597371bdf3dbc01ce45b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-common": {
