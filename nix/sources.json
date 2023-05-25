@@ -53,10 +53,10 @@
         "homepage": "https://mutwo.readthedocs.io/en/latest/",
         "owner": "mutwo-org",
         "repo": "mutwo.core",
-        "rev": "470a5dcae026062c638c1079e0a0b1396c602344",
-        "sha256": "1xw0cazw2c30q0z9f6li713clv991rrdwnyryxn8kqd368dci0lm",
+        "rev": "1a7c0da2b3f70c10d8d059633c21e888aa12b70c",
+        "sha256": "1r678j3yb7803px3yrlq90jgxd0ym9mf1nxp7d0kcxfwz1yr7p83",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.core/archive/470a5dcae026062c638c1079e0a0b1396c602344.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.core/archive/1a7c0da2b3f70c10d8d059633c21e888aa12b70c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-csound": {
@@ -125,10 +125,10 @@
         "homepage": null,
         "owner": "mutwo-org",
         "repo": "mutwo.timeline",
-        "rev": "0e8fd2e7dba170c60803c1b01d6b6ccab02471f3",
-        "sha256": "0pwha0s52kbck4m059pkdjl8z90av204z4b68xl57f16n0da4w0z",
+        "rev": "c1bf2350de4f672e6643b159c4ad85052942dfe3",
+        "sha256": "0jphilli4qy5mcc1k7hagm9y3nskknxy8qj9a8m274wd42gcapra",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/0e8fd2e7dba170c60803c1b01d6b6ccab02471f3.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.timeline/archive/c1bf2350de4f672e6643b159c4ad85052942dfe3.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
