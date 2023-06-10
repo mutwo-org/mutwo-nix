@@ -77,10 +77,10 @@
         "homepage": null,
         "owner": "levinericzimmermann",
         "repo": "mutwo.diary",
-        "rev": "ebfcfb99c9cb4db14cb418c45e1d88fd14cc2b6e",
-        "sha256": "12111j53j7k2wq3r3bj6rqik4q2xm1gspzi4sizrcg2g96pj1ck1",
+        "rev": "08e530c4dd66a530cccb9e4f08c91470a4da2fa9",
+        "sha256": "0mrgznpccrjg2c4yg0jlhhcsscxwa512kkra7nk1ikmvvsl5mq73",
         "type": "tarball",
-        "url": "https://github.com/levinericzimmermann/mutwo.diary/archive/ebfcfb99c9cb4db14cb418c45e1d88fd14cc2b6e.tar.gz",
+        "url": "https://github.com/levinericzimmermann/mutwo.diary/archive/08e530c4dd66a530cccb9e4f08c91470a4da2fa9.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-ekmelily": {
