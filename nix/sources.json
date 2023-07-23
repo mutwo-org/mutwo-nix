@@ -101,10 +101,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.midi",
-        "rev": "2ef7c12e6d1540d92348508cfe1259e132a853a6",
-        "sha256": "1x7xx0rz13dmmjxhrsshch35fpiyfxn9q85xxz86qnjrsndq2c30",
+        "rev": "ae2f65e5ef79beedb7db17bf92536be3c7f9dfdd",
+        "sha256": "1pawfdpfq1rf5ad7mapjqsgknzrabwad97ipjlnzmi1y8wsgl7xy",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.midi/archive/2ef7c12e6d1540d92348508cfe1259e132a853a6.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.midi/archive/ae2f65e5ef79beedb7db17bf92536be3c7f9dfdd.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-music": {
