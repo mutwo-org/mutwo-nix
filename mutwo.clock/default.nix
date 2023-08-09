@@ -7,6 +7,7 @@ let
 
   mutwo-timeline = import ../mutwo.timeline/default.nix {};
   mutwo-abjad = import ../mutwo.abjad/default.nix {};
+  mutwo-common = import ../mutwo.common/default.nix {};
   treelib = import ../treelib/default.nix {};
 
   origin = sources.mutwo-clock;
@@ -32,6 +33,7 @@ in
     propagatedBuildInputs = [ 
       mutwo-timeline
       mutwo-abjad
+      mutwo-common
       lilypond-with-fonts
       treelib
       numpy
