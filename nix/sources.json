@@ -17,10 +17,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.abjad",
-        "rev": "11ce751ffc86a416a53453183d867ab75f00479e",
-        "sha256": "1wib2d26iix5h25wwrh46jn5jms1sv5h9a9ll2yyz3k1rzzc760k",
+        "rev": "27f942a53986a5369ad5d5fd9dc6f20ad4228b34",
+        "sha256": "0vhxs3w6z3wajh2gzkr893ga5r7c6r3mx9bm2amjl614s1bsxd06",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/11ce751ffc86a416a53453183d867ab75f00479e.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/27f942a53986a5369ad5d5fd9dc6f20ad4228b34.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-clock": {
