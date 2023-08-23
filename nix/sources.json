@@ -113,10 +113,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.music",
-        "rev": "7735d812ee468dbd8a18943d42b0c54fdba2a36c",
-        "sha256": "1zaq54p0ccyvwh510xiqb4cbmg1dfwl9amz388fiwin4jsbvaw92",
+        "rev": "d92713dd9dc373370a96b16984f0e92326f6ef59",
+        "sha256": "13dcm0il7z5sp5j1l569cly87wva4a2vscqfqhb4jy8bnah8qx4k",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.music/archive/7735d812ee468dbd8a18943d42b0c54fdba2a36c.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.music/archive/d92713dd9dc373370a96b16984f0e92326f6ef59.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-timeline": {
