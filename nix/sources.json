@@ -89,10 +89,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.ekmelily",
-        "rev": "a88849e0f24ef0ac0cd7edf0a7f549562d0f1b0d",
-        "sha256": "1wwb8mpd18ll6bngp7x80qlgmkksyhjsf0j0awlfzv8sm97cvvxq",
+        "rev": "b6b90e79b4933ab609ca0bcc6df0f78aa2937546",
+        "sha256": "0bjckhdgj9v05ly5yxqgdjnb4fd7ymz8ziyjccg0l3ap7nycqdif",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.ekmelily/archive/a88849e0f24ef0ac0cd7edf0a7f549562d0f1b0d.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.ekmelily/archive/b6b90e79b4933ab609ca0bcc6df0f78aa2937546.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-midi": {
