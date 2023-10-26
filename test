@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+
+import concurrent.futures
+import os
+import subprocess
+import sys
+
+
+failed_list = []
+
+
+def test(d):
+    space = 30 - len(d)
+    msg = f"Build '{d}':{' ' * space}"
+    p = subprocess.run(["nix-build", f"{d}/default.nix"], capture_output=True)
+    if passed := (p.returncode == 0):
+        msg += "passed"
+    else:
+        msg += "failed"
+    print(msg)
+    if not passed:
+        s = "-" * 100
+        t = f"ERROR LOG {d}"
+        failed_text = f"{s}\n{s}\n\t{t}\n\n{p.stderr.decode()}\n\n{s}\n{s}\n"
+        failed_list.append(failed_text)
+    return passed
+
+
+print("Run software compilation test...")
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+    future_list = []
+    for d in os.listdir(r"./."):
+        if os.path.isdir(d) and os.path.exists(f"{d}/default.nix"):
+            future = pool.submit(test, d)
+            future_list.append(future)
+    try:
+        result_list = [f.result() for f in future_list]
+    except KeyboardInterrupt:
+        [f.cancel() for f in future_list]
+        raise
+
+if failed_list:
+    print("\n".join(failed_list))
+    sys.exit(1)
+
+print("All tests were succesfull.")
+sys.exit(0)
