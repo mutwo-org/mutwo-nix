@@ -1,0 +1,32 @@
+version: '2.1'
+
+orbs:
+  nix: eld/nix@1.0.0
+
+jobs:
+  build_test:
+    machine:
+      image: ubuntu-2204:2023.04.2
+    steps:
+      - nix/install
+      - checkout
+      - run:
+          name: setup nix channel
+          command: 
+            nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+      - run:
+          name: update nix channel
+          command: 
+            nix-channel --update
+      - run:
+          name: Run tests
+          command: 
+            nix-shell -p python3 --command "./test"
+
+workflows:
+  build_test:
+    jobs:
+      - build_test:
+          filters:
+            tags:
+              only: /.*/
