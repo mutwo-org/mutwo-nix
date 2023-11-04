@@ -68,5 +68,5 @@ if failed_list:
     print("\n".join(failed_list))
     sys.exit(1)
 
-print("All tests were succesfull.")
+print("All tests were successful.")
 sys.exit(0)
