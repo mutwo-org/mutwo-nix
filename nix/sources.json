@@ -53,10 +53,10 @@
         "homepage": "https://mutwo.readthedocs.io/en/latest/",
         "owner": "mutwo-org",
         "repo": "mutwo.core",
-        "rev": "784f70ef3607383bb67670902cf0b36f3473ce82",
-        "sha256": "02jzifh6hj2arsr9nkxxa0mdg4y3aircaa4ggbg8b1zxlvmxnza5",
+        "rev": "7a9f051a64acf5c1e29f50563be1f1a6f99d84da",
+        "sha256": "0b7amhvw1wy1hsvz1aylp1fnv6ngw0gzv85792ri5iwriwcgihzn",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.core/archive/784f70ef3607383bb67670902cf0b36f3473ce82.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.core/archive/7a9f051a64acf5c1e29f50563be1f1a6f99d84da.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-csound": {
