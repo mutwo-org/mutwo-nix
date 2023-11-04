@@ -9,10 +9,17 @@ import sys
 failed_list = []
 
 
-def test(d):
-    space = 30 - len(d)
-    msg = f"Build '{d}':{' ' * space}"
-    p = subprocess.run(["nix-build", f"{d}/default.nix"], capture_output=True)
+def test(software: str, python_version: str = "310"):
+    # Create test nix derivation
+    test_software_id = f".{software}_{python_version}.nix"
+    with open(test_software_id, 'w') as f:
+        f.write(_t(software, python_version))
+    # Build derivation
+    name = f"{software} (py={python_version})"
+    space = 30 - len(name)
+    p = subprocess.run(["nix-build", f"{test_software_id}"], capture_output=True)
+    # What's the build state?
+    msg = f"Build '{name}':{' ' * space}"
     if passed := (p.returncode == 0):
         msg += "passed"
     else:
@@ -20,10 +27,27 @@ def test(d):
     print(msg)
     if not passed:
         s = "-" * 100
-        t = f"ERROR LOG {d}"
+        t = f"ERROR LOG {name}"
         failed_text = f"{s}\n{s}\n\t{t}\n\n{p.stderr.decode()}\n\n{s}\n{s}\n"
         failed_list.append(failed_text)
+    # Cleanup
+    os.remove(test_software_id)
     return passed
+
+
+def _t(software: str, python_version: str) -> str:
+    return fr'''{{}}:
+
+    let
+
+      sources = import ./nix/sources.nix;
+      pkgs = import sources.nixpkgs {{}};
+      pythonPackages = pkgs.python{python_version}Packages;
+
+    in
+
+      import ./{software}/default.nix {{sources=sources;pkgs=pkgs;pythonPackages=pythonPackages;}}
+    '''
 
 
 print("Run software compilation test...")
