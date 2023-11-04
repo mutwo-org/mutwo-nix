@@ -70,6 +70,20 @@ in
         #   https://github.com/Abjad/abjad/blob/v3.7/setup.py#L84
         sed -i '84d' setup.py
     '';
+    nativeCheckInputs = [
+        lilypond
+        pytest
+    ];
+    checkInputs = [
+        lilypond
+        pytest
+    ];
+    checkPhase = ''
+      runHook preCheck
+      pytest
+      pytest --doctest-modules abjad
+      runHook postCheck
+    '';
     propagatedBuildInputs = [
       quicktions
       uqbar
@@ -84,5 +98,5 @@ in
       six
       pytest-helpers-namespace
     ];
-    doCheck = false;
+    doCheck = true;
   }
