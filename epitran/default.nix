@@ -4,7 +4,7 @@ with pythonPackages;
 
 let
   args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
-  panphon = import ../panphon/default.nix {};
+  panphon = import ../panphon/default.nix args;
 in
   buildPythonPackage rec {
     name = "epitran";

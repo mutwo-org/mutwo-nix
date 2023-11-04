@@ -27,7 +27,7 @@ in
       pytest
     ];
     propagatedBuildInputs = [ 
-      python310Packages.numpy
+      numpy
       mutwo-core
       python-ranges
     ];
