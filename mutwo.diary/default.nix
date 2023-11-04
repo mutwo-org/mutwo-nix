@@ -5,7 +5,8 @@ with pythonPackages;
 let
 
   args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
-  mutwo-clock = import ../mutwo.clock/default.nix args;
+  mutwo-core = import ../mutwo.core/default.nix args;
+  mutwo-common = import ../mutwo.common/default.nix args;
   origin = sources.mutwo-diary;
 
 in
@@ -25,7 +26,8 @@ in
       pytest
     ];
     propagatedBuildInputs = [ 
-      mutwo-clock
+      mutwo-core
+      mutwo-common
       zodb
       numpy
     ];
