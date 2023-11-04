@@ -6,8 +6,8 @@ buildPythonPackage rec {
   name = "quicktions";
   src = fetchPypi {
     pname = name;
-    version = "1.13";
-    sha256 = "sha256-HzmMN1sAUjsSgy7vNvX/hq49LZmSnTQYbamjRoXeaL0=";
+    version = "1.15";
+    sha256 = "sha256-K8NXZoJm2fyQL6iGykTJ2NPoq50q54ZflxvxBrT9HMM=";
   };
   doCheck = true;
   propagatedBuildInputs = [
