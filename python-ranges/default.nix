@@ -1,6 +1,6 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 buildPythonPackage rec {
   name = "python-ranges";
@@ -12,5 +12,5 @@ buildPythonPackage rec {
   };
   # TypeError: calling <class 'ranges.RangeDict.RangeDict'> returned {}, not a test
   doCheck = false;
-  checkInputs = [ python310Packages.pytest ];
+  checkInputs = [ pytest ];
 }

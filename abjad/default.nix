@@ -1,11 +1,12 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 
 let
 
-  quicktions = import ../quicktions/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  quicktions = import ../quicktions/default.nix args;
 
   sphinx-autodoc-typehints = buildPythonPackage rec {
     name = "sphinx-autodoc-typehints";
@@ -15,7 +16,7 @@ let
       sha256 = "sha256-wE2PjXDpiJYOJbIGrzmpDfhOfiwIW7JOEjvDaEAhsxM=";
     };
     propagatedBuildInputs = [
-      python310Packages.sphinx
+      sphinx
     ];
     doCheck = true;
   };
@@ -39,15 +40,15 @@ let
       sha256 = "sha256-0G02Amj8qB81DD0E1whPNYq9xfU6JeXrKuEW8F9HhQY=";
     };
     propagatedBuildInputs = [
-      python310Packages.sphinx_rtd_theme
-      python310Packages.flake8
-      python310Packages.isort
-      python310Packages.mypy
-      python310Packages.pytest
-      python310Packages.pytest-cov
-      python310Packages.unidecode
-      python310Packages.sphinx
-      python310Packages.black
+      sphinx_rtd_theme
+      flake8
+      isort
+      mypy
+      pytest
+      pytest-cov
+      unidecode
+      sphinx
+      black
       sphinx-autodoc-typehints
     ];
     doCheck = false;
@@ -73,15 +74,15 @@ in
       quicktions
       uqbar
       ply
-      python310Packages.black
-      python310Packages.flake8
-      python310Packages.isort
-      python310Packages.mypy
-      python310Packages.pytest
-      python310Packages.pytest-cov
-      python310Packages.roman
-      python310Packages.six
-      python310Packages.pytest-helpers-namespace
+      black
+      flake8
+      isort
+      mypy
+      pytest
+      pytest-cov
+      roman
+      six
+      pytest-helpers-namespace
     ];
     doCheck = false;
   }

@@ -1,11 +1,12 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 let
 
-  mutwo-core = import ../mutwo.core/default.nix {};
-  epitran = import ../epitran/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  mutwo-core = import ../mutwo.core/default.nix args;
+  epitran = import ../epitran/default.nix args;
 
   origin = sources.mutwo-music;
 

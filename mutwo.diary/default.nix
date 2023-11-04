@@ -1,10 +1,11 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {} }:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 let
 
-  mutwo-clock = import ../mutwo.clock/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  mutwo-clock = import ../mutwo.clock/default.nix args;
   origin = sources.mutwo-diary;
 
 in

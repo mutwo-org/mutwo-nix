@@ -1,11 +1,13 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 let
 
-  python-ranges = import ../python-ranges/default.nix {};
-  quicktions = import ../quicktions/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+
+  python-ranges = import ../python-ranges/default.nix args;
+  quicktions = import ../quicktions/default.nix args;
 
   origin = sources.mutwo-core;
 

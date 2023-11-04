@@ -1,11 +1,11 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
-
+with pythonPackages;
 
 let
 
-  pyo = import ../pyo/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  pyo = import ../pyo/default.nix args;
 
   origin = sources.walkman;
 

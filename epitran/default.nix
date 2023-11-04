@@ -1,9 +1,9 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
-
+with pythonPackages;
 
 let
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
   panphon = import ../panphon/default.nix {};
 in
   buildPythonPackage rec {
@@ -16,10 +16,10 @@ in
     };
     propagatedBuildInputs = [ 
         flite
-        python310Packages.setuptools
-        python310Packages.regex
-        python310Packages.marisa-trie
-        python310Packages.requests
+        setuptools
+        regex
+        marisa-trie
+        requests
         panphon
     ];
   }

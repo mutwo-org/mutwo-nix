@@ -1,13 +1,13 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
-
+with pythonPackages;
 
 let
 
-  mutwo-core = import ../mutwo.core/default.nix {};
-  python-ranges = import ../python-ranges/default.nix {};
-  treelib = import ../treelib/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  mutwo-core = import ../mutwo.core/default.nix args;
+  python-ranges = import ../python-ranges/default.nix args;
+  treelib = import ../treelib/default.nix args;
 
   origin = sources.mutwo-common;
 

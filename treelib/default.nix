@@ -1,6 +1,6 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 buildPythonPackage rec {
   name = "treelib";
@@ -11,5 +11,5 @@ buildPythonPackage rec {
     sha256 = "sha256-QGgWsMfPm4ZCSeU/ODY0ewg1mu/mRmtXgHtDyHT9dac=";
   };
   doCheck = true;
-  propagatedBuildInputs = [ python310Packages.future ];
+  propagatedBuildInputs = [ future ];
 }

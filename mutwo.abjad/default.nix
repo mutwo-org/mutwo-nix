@@ -1,12 +1,13 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 let
 
-  mutwo-ekmelily = import ../mutwo.ekmelily/default.nix {};
-  abjad = import ../abjad/default.nix {};
-  abjad-ext-nauert = import ../abjad.ext-nauert/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  mutwo-ekmelily = import ../mutwo.ekmelily/default.nix args;
+  abjad = import ../abjad/default.nix args;
+  abjad-ext-nauert = import ../abjad.ext-nauert/default.nix args;
 
   # Fix Fontconfig error: Cannot load default config file
   fontsConf = makeFontsConf {

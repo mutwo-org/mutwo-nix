@@ -1,6 +1,6 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
+with pythonPackages;
 
 buildPythonPackage rec {
   name = "panphon";
@@ -12,12 +12,12 @@ buildPythonPackage rec {
   };
   propagatedBuildInputs = [ 
       flite
-      python310Packages.unicodecsv
-      python310Packages.pyyaml
-      python310Packages.regex
-      python310Packages.editdistance
-      python310Packages.numpy
-      python310Packages.munkres
-      python310Packages.setuptools
+      unicodecsv
+      pyyaml
+      regex
+      editdistance
+      numpy
+      munkres
+      setuptools
   ];
 }

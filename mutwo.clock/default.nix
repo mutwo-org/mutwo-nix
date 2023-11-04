@@ -1,14 +1,14 @@
-{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}}:
+{ sources ? import ../nix/sources.nix, pkgs ? import sources.nixpkgs {}, pythonPackages ? pkgs.python310Packages}:
 with pkgs;
-with pkgs.python310Packages;
-
+with pythonPackages;
 
 let
 
-  mutwo-timeline = import ../mutwo.timeline/default.nix {};
-  mutwo-abjad = import ../mutwo.abjad/default.nix {};
-  mutwo-common = import ../mutwo.common/default.nix {};
-  treelib = import ../treelib/default.nix {};
+  args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
+  mutwo-timeline = import ../mutwo.timeline/default.nix args;
+  mutwo-abjad = import ../mutwo.abjad/default.nix args;
+  mutwo-common = import ../mutwo.common/default.nix args;
+  treelib = import ../treelib/default.nix args;
 
   origin = sources.mutwo-clock;
 
