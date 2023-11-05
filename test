@@ -12,7 +12,7 @@ failed_list = []
 def test(software: str, python_version: str = "310"):
     # Create test nix derivation
     test_software_id = f".{software}_{python_version}.nix"
-    with open(test_software_id, 'w') as f:
+    with open(test_software_id, "w") as f:
         f.write(_t(software, python_version))
     # Build derivation
     name = f"{software} (py={python_version})"
@@ -36,7 +36,7 @@ def test(software: str, python_version: str = "310"):
 
 
 def _t(software: str, python_version: str) -> str:
-    return fr'''{{}}:
+    return rf"""{{}}:
 
     let
 
@@ -47,22 +47,28 @@ def _t(software: str, python_version: str) -> str:
     in
 
       import ./{software}/default.nix {{sources=sources;pkgs=pkgs;pythonPackages=pythonPackages;}}
-    '''
+    """
+
+
+def run_tests(python_version: str = "310"):
+    print(f"\nTest with python {python_version}.\n")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        future_list = []
+        for d in os.listdir(r"./."):
+            if os.path.isdir(d) and os.path.exists(f"{d}/default.nix"):
+                future = pool.submit(test, d, python_version)
+                future_list.append(future)
+        try:
+            [f.result() for f in future_list]
+        except KeyboardInterrupt:
+            [f.cancel() for f in future_list]
+            raise
 
 
 print("Run software compilation test...")
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-    future_list = []
-    for d in os.listdir(r"./."):
-        if os.path.isdir(d) and os.path.exists(f"{d}/default.nix"):
-            future = pool.submit(test, d)
-            future_list.append(future)
-    try:
-        result_list = [f.result() for f in future_list]
-    except KeyboardInterrupt:
-        [f.cancel() for f in future_list]
-        raise
+for python_version in "310 311".split(" "):
+    run_tests(python_version)
 
 if failed_list:
     print("\n".join(failed_list))
