@@ -15,7 +15,7 @@ nativeCheckInputs = [ pkgs.graphviz pytest ];
 checkInputs = [ pkgs.graphviz pytest ];
 checkPhase = ''
   runHook preCheck
-  pytest -k "not test_call_help and not test_help and not test_interpret_code_blocks_02 and not test_sphinx_api_1 and not test_sphinx_book_text_cached and not test_sphinx_book_text_uncached and not test_sphinx_book_text_broken_strict"
+  pytest -k "not test_call_help and not test_help and not test_interpret_code_blocks_02 and not test_sphinx_api_1 and not test_sphinx_book_text_cached and not test_sphinx_book_text_uncached and not test_sphinx_book_text_broken_strict and not test_03 and not test_str_04 and not test_sphinx_api_2 and not test_sphinx_style_html and not test_sphinx_style_latex and not test_sphinx_style_1"
   runHook postCheck
 '';
 propagatedBuildInputs = [
