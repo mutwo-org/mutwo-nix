@@ -8,6 +8,7 @@ let
 in
   buildPythonPackage rec {
     name = "epitran";
+    pyproject = true;
     src = fetchFromGitHub {
       owner = "dmort27";
       repo = name;

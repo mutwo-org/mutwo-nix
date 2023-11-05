@@ -7,8 +7,8 @@ buildPythonPackage rec {
   src = fetchFromGitHub {
     owner = "dmort27";
     repo = name;
-    rev = "43389ed78b405412b3eee448875969de7a18b78a";
-    sha256 = "sha256-HYdqoAYkbgMLbuWoSjUGKArkfvLEQmILVdJvvo3N9mg=";
+    rev = "f66df90e179179696e21991993bf06b8e9cebfba";
+    sha256 = "sha256-uKiTOJ3pPy1mZQHNPsEaomXPWRSClSGoY7dpa11lAuI=";
   };
   propagatedBuildInputs = [ 
       flite
