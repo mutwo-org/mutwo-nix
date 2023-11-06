@@ -4,13 +4,22 @@ with pythonPackages;
 
 buildPythonPackage rec {
   name = "python-ranges";
-  src = fetchFromGitHub {
-    owner = "Superbird11";
-    repo = "ranges";
-    rev = "38ac789b61e1e33d1a8be999ca969f909bb652c0";
-    sha256 = "sha256-oRQCtDBQnViNP6sJZU0NqFWkn2YpcIeGWmfx3Ne/n2c=";
+  src = fetchPypi {
+    pname = name;
+    version = "1.2.2";
+    sha256 = "sha256-eZYYBGYDlUp4q0YR0hCA04ez6cUMGBeJ45A9Ygmia5g=";
   };
   # TypeError: calling <class 'ranges.RangeDict.RangeDict'> returned {}, not a test
-  doCheck = false;
+  doCheck = true;
   checkInputs = [ pytest ];
+  nativeCheckInputs = [ pytest ];
+  checkPhase = ''
+    runHook preCheck
+    pytest
+    runHook postCheck
+  '';
+  patchPhase = ''
+      # readme.md isn't found, needed in setup.py?
+      touch readme.md
+  '';
 }
