@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "mutwo-org",
         "repo": "mutwo.common",
-        "rev": "4adb24d52f4a8f86e298da01c84082259c93fc23",
-        "sha256": "004hvfm2w93d5p0vsnaksryw32w9bjpxq1psgakia612hhswrvnw",
+        "rev": "1cccb49dc5268aa89aa0f51d3295a135b7da16a1",
+        "sha256": "0aai51v8pn2h25sppk8ca18czhj7hqbm1nr1w77s9hymi490rpgf",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.common/archive/4adb24d52f4a8f86e298da01c84082259c93fc23.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.common/archive/1cccb49dc5268aa89aa0f51d3295a135b7da16a1.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-core": {
