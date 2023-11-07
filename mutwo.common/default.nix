@@ -33,6 +33,7 @@ in
     checkPhase = ''
       runHook preCheck
       pytest
+      pytest --doctest-modules mutwo
       runHook postCheck
     '';
     doCheck = true;
