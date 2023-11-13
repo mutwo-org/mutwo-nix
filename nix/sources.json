@@ -119,6 +119,18 @@
         "url": "https://github.com/mutwo-org/mutwo.music/archive/20826ff858855f0f68df1a1a102041f319c1c94c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-reaper": {
+        "branch": "main",
+        "description": "Reaper extension for event based library mutwo",
+        "homepage": null,
+        "owner": "mutwo-org",
+        "repo": "mutwo.reaper",
+        "rev": "e8a08693cb82497472ac465ad6db09fb7ce1dbb3",
+        "sha256": "0v5y0cqphawirwdwdzzqbll3f5vqifyrh1rzhp1n6pgbxqyvrbrf",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.reaper/archive/e8a08693cb82497472ac465ad6db09fb7ce1dbb3.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-timeline": {
         "branch": "main",
         "description": "Place events on timeline. Extension for mutwo.",
