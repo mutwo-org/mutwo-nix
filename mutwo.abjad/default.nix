@@ -44,6 +44,7 @@ in
       abjad-ext-nauert
       mutwo-ekmelily
       lilypond-with-fonts
+      pillow
     ];
     checkPhase = ''
       runHook preCheck
