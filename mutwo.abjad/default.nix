@@ -15,7 +15,7 @@ let
   };
 
   # Fix Fontconfig error: Can't find cache
-  fontsCache= makeFontsCache {};
+  fontsCache = makeFontsCache {};
 
   origin = sources.mutwo-abjad;
 
@@ -31,12 +31,10 @@ in
     };
     nativeCheckInputs = [
       pytest
-      pillow
       lilypond-with-fonts
     ];
     checkInputs = [
       pytest
-      pillow
       lilypond-with-fonts
     ];
     propagatedBuildInputs = [
@@ -44,7 +42,6 @@ in
       abjad-ext-nauert
       mutwo-ekmelily
       lilypond-with-fonts
-      pillow
     ];
     checkPhase = ''
       runHook preCheck
@@ -52,9 +49,6 @@ in
       pytest
       runHook postCheck
     '';
-    # XXX: Lilypond comparison tests are broke, I don't know why,
-    # because locally they work with exactly the same version.
-    # I should ASAP fix them.
-    doCheck = false;
+    doCheck = true;
     build-cache-failures = true;
   }

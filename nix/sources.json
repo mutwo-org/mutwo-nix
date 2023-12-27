@@ -17,10 +17,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.abjad",
-        "rev": "3478a2104587138b72fafe70be48d92f7e34b5d9",
-        "sha256": "030qm9r9r4q8a64bxqpypcy1hi1bv0mhf4vaw0vx631fdpc9v4qv",
+        "rev": "fe0230cdbf959b2c5b75cf2c5d9a2b18952e943e",
+        "sha256": "07pw0h1ylijf96aww5b1pxsibh8g3bnvb9ql5gbhf1adfjpclg78",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/3478a2104587138b72fafe70be48d92f7e34b5d9.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/fe0230cdbf959b2c5b75cf2c5d9a2b18952e943e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-clock": {
@@ -113,10 +113,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.music",
-        "rev": "20826ff858855f0f68df1a1a102041f319c1c94c",
-        "sha256": "0cl5cmhklrr0psi31vi3n9psxgw80sgwswkrs171h5njn02kzbwa",
+        "rev": "9a175139940523a0f0acb48d2c0f1b4e8529250d",
+        "sha256": "0qil8v6l9mhj351a155acyq0miasfps5w3znmskz4bscd2acmd26",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.music/archive/20826ff858855f0f68df1a1a102041f319c1c94c.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.music/archive/9a175139940523a0f0acb48d2c0f1b4e8529250d.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-reaper": {

@@ -23,8 +23,6 @@ in
     nativeCheckInputs = [ pytest ];
     checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
-      numpy
-      scipy
       sympy
       mutwo-core
       epitran
