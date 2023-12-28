@@ -14,8 +14,8 @@ in
     pyproject = true;
     src = fetchPypi {
       pname = name;
-      version = "3.8";
-      sha256 = "sha256-46mypf0BDpSIeLNugC5WomcMpO36vZPynqUyd2t40u4=";
+      version = "3.9";
+      sha256 = "sha256-e/iqJ0V2CJXHbJjRaZ070naxR1LE8kwc2VU3gmro7hw=";
     };
     doCheck = true;
     propagatedBuildInputs = [
