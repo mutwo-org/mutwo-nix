@@ -27,8 +27,8 @@ in
     name = "abjad";
     src = fetchPypi {
       pname = name;
-      version = "3.10";
-      sha256 = "sha256-zadkcLfNki3dA7keYxKsDXqNNIHoAqQwFNhHpxz4EGo=";
+      version = "3.11";
+      sha256 = "sha256-UKbid5TrtsXoasJzWawwV8A9RWbuu+pxnLRLRRuOR+U=";
     };
     patchPhase = ''
         # Remove useless sphinx-autodoc-typehints dependency.
