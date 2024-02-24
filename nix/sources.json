@@ -23,6 +23,18 @@
         "url": "https://github.com/mutwo-org/mutwo.abjad/archive/349e384b1771739fe2a3bbd2f235ba186095e553.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-acoustic": {
+        "branch": "main",
+        "description": "acoustic functionalities for event based framework mutwo",
+        "homepage": null,
+        "owner": "mutwo-org",
+        "repo": "mutwo.acoustic",
+        "rev": "150cac31c899e92a38f7e1317c13ccd6ada02c18",
+        "sha256": "0g52x64zgyiyifgj0zz7qbaw68jsba8cp9b0mr1gsbpp8a2bni0z",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.acoustic/archive/150cac31c899e92a38f7e1317c13ccd6ada02c18.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-clock": {
         "branch": "main",
         "description": "levins clock based composition tools",
