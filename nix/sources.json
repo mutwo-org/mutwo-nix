@@ -119,6 +119,18 @@
         "url": "https://github.com/mutwo-org/mutwo.midi/archive/ae2f65e5ef79beedb7db17bf92536be3c7f9dfdd.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "mutwo-mmml": {
+        "branch": "main",
+        "description": "MMML extension for event based library mutwo",
+        "homepage": null,
+        "owner": "mutwo-org",
+        "repo": "mutwo.mmml",
+        "rev": "0101b31c8fcd1880cd692e8e0e1c7b8bab04a04e",
+        "sha256": "1wf5jmml2aj6ahbdy9yqhwyn0zngn5i4dsl22bqxvgz10karyann",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/mutwo.mmml/archive/0101b31c8fcd1880cd692e8e0e1c7b8bab04a04e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-music": {
         "branch": "main",
         "description": "Music extension for event based library mutwo",
