@@ -7,6 +7,7 @@ let
   args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
   mutwo-core = import ../mutwo.core/default.nix args;
   mutwo-common = import ../mutwo.common/default.nix args;
+  mutwo-timeline = import ../mutwo.timeline/default.nix args;
   origin = sources.mutwo-diary;
 
 in
@@ -28,6 +29,7 @@ in
     propagatedBuildInputs = [ 
       mutwo-core
       mutwo-common
+      mutwo-timeline
       zodb
       numpy
     ];
