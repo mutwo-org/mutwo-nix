@@ -27,7 +27,6 @@ in
       pytest
     ];
     propagatedBuildInputs = [ 
-      numpy
       mutwo-core
       python-ranges
     ];

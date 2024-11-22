@@ -11,7 +11,6 @@ in
 
   buildPythonPackage rec {
     name = "abjad-ext-nauert";
-    pyproject = true;
     src = fetchPypi {
       pname = name;
       version = "3.11";

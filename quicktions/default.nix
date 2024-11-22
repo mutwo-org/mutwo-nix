@@ -11,7 +11,6 @@ buildPythonPackage rec {
   };
   doCheck = true;
   propagatedBuildInputs = [
-    cython_3
-    codecov
+    cython
   ];
 }

@@ -24,8 +24,6 @@ in
     nativeCheckInputs = [ pytest ];
     checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
-      numpy
-      scipy
       python-ranges
       quicktions
     ];

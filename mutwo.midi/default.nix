@@ -28,7 +28,6 @@ in
     propagatedBuildInputs = [
       mutwo-music
       mido
-      numpy
     ];
     checkPhase = ''
       runHook preCheck
