@@ -11,6 +11,18 @@
         "url": "https://github.com/MTG/essentia/archive/6fa440fd7fb3019319f071dbec29ba996bc7e410.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "m2": {
+        "branch": "main",
+        "description": "convenience wrapper around mu2",
+        "homepage": null,
+        "owner": "mutwo-org",
+        "repo": "m2",
+        "rev": "61d04b2d12361bb2d74ce32f1196e800e9963059",
+        "sha256": "08hmsx04hbnvr83zg6inq6pcmr6xprg22xifzdwrzvnzplimavgd",
+        "type": "tarball",
+        "url": "https://github.com/mutwo-org/m2/archive/61d04b2d12361bb2d74ce32f1196e800e9963059.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "mutwo-abjad": {
         "branch": "main",
         "description": "Abjad extension for event based library mutwo",
