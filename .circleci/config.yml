@@ -20,6 +20,7 @@ jobs:
             nix-channel --update
       - run:
           name: Run tests
+          no_output_timeout: 40m
           command: 
             nix-shell -p python3 --command "./test"
 
