@@ -125,10 +125,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.midi",
-        "rev": "4954db92e51534bc9574b4c01758413e667bc079",
-        "sha256": "0z1rxdqp3klacpn9rrd2in51c1ikk2z96lmsk3dp7p4374v69rj0",
+        "rev": "8269d15a1e838c79a627ae6f738eec5432e9925f",
+        "sha256": "09ggs8rq9wdqa3sjfzl3kw490azilqlmk6hjb0cnxv32v9kmizpk",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.midi/archive/4954db92e51534bc9574b4c01758413e667bc079.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.midi/archive/8269d15a1e838c79a627ae6f738eec5432e9925f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-mmml": {
