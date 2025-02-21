@@ -67,7 +67,7 @@ def run_tests(python_version: str = "310"):
 
 print("Run software compilation test...")
 
-for python_version in "310 311".split(" "):
+for python_version in "310 311 312".split(" "):
     run_tests(python_version)
 
 if failed_list:
