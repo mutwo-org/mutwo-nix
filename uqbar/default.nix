@@ -32,6 +32,8 @@ propagatedBuildInputs = [
   sphinx-autodoc-typehints
   # non python dependencies
   pkgs.graphviz
+  # py>=3.12 compatibility
+  distutils
 ];
 doCheck = true;
 }
