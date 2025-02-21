@@ -6,7 +6,6 @@ let
 
   args = {sources=sources; pkgs=pkgs; pythonPackages=pythonPackages;};
   mutwo-core = import ../mutwo.core/default.nix args;
-  epitran = import ../epitran/default.nix args;
   python-ranges = import ../python-ranges/default.nix args;
 
   origin = sources.mutwo-music;
