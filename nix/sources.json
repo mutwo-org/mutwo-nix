@@ -29,10 +29,10 @@
         "homepage": "",
         "owner": "mutwo-org",
         "repo": "mutwo.abjad",
-        "rev": "97da6f0fac91991649d48cdb8b0220074e98f8ec",
-        "sha256": "0ghn8cfwp72z4jnbmg2mzwnd1nr0x47qgzq6gjlsdvnlrk725d9p",
+        "rev": "c9f7bf5d2ba549f236c7440cbe405ad1c74b94b5",
+        "sha256": "0mwsqn98zy0hs6fp1iffa38f3j6h8xjhpn7yy5w7yjlgvbm9y5d5",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/97da6f0fac91991649d48cdb8b0220074e98f8ec.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.abjad/archive/c9f7bf5d2ba549f236c7440cbe405ad1c74b94b5.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-acoustic": {
