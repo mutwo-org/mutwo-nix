@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "mutwo-org",
         "repo": "mutwo.acoustic",
-        "rev": "589d5be91b87742604f6f6a83f5b87b5ff4f4a74",
-        "sha256": "07wprfp7qja3zi3dw00zvv73q80h9bd9w1dzavg9c5567gc94y4r",
+        "rev": "3185cd589b893d91f7e1efe01c1e644532a8bd4f",
+        "sha256": "1sfar9rqcpg8knbq39bif8fn2lfv13rpnc59c7nyv9qvnyzwhqf4",
         "type": "tarball",
-        "url": "https://github.com/mutwo-org/mutwo.acoustic/archive/589d5be91b87742604f6f6a83f5b87b5ff4f4a74.tar.gz",
+        "url": "https://github.com/mutwo-org/mutwo.acoustic/archive/3185cd589b893d91f7e1efe01c1e644532a8bd4f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "mutwo-clock": {
