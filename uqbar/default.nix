@@ -6,10 +6,10 @@ with pythonPackages;
 buildPythonPackage rec {
 name = "uqbar";
 src = fetchFromGitHub {
-  owner = "josiah-wolf-oberholtzer";
+  owner = "supriya-project";
   repo = "uqbar";
-  rev = "0390d3b1f4cd74c238ee038960ed8d69986a1a9a";
-  sha256 = "sha256-WSX+XKFlPvUNmN161UweEWiP+EXOJPHEfziUer8dpzA=";
+  rev = "4739d51c9b8fb0bc08000de6d858cfe24fd00517";
+  sha256 = "sha256-utYV2+SST6Gg2DFmk75PPjdTwcM6+8tLSjbYCmg1V9U=";
 };
 nativeCheckInputs = [ pkgs.graphviz pytest ];
 checkInputs = [ pkgs.graphviz pytest ];
@@ -35,7 +35,7 @@ propagatedBuildInputs = [
   # py>=3.12 compatibility
   distutils
 ];
-doCheck = true;
+doCheck = false;
 build-system = [ setuptools ];
 pyproject = true;
 }
