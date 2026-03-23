@@ -22,4 +22,6 @@ buildPythonPackage rec {
       # readme.md isn't found, needed in setup.py?
       touch readme.md
   '';
+  pyproject = true;
+  build-system = [ setuptools ];
 }

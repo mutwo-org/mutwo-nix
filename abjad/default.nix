@@ -18,6 +18,8 @@ let
       sha256 = "sha256-PEwIgmM7DQHy6FOhcUwkricrdW3wZe3ggSQnUvgKISo=";
     };
     doCheck = true;
+    pyproject = true;
+    build-system = [ setuptools ];
   };
 
 
@@ -66,4 +68,6 @@ in
       pytest-helpers-namespace
     ];
     doCheck = true;
+    pyproject = true;
+    build-system = [ setuptools ];
   }

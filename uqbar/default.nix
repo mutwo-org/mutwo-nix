@@ -20,7 +20,7 @@ checkPhase = ''
 '';
 propagatedBuildInputs = [
   # python dependencies
-  sphinx_rtd_theme
+  sphinx-rtd-theme
   flake8
   isort
   mypy
@@ -36,4 +36,6 @@ propagatedBuildInputs = [
   distutils
 ];
 doCheck = true;
+build-system = [ setuptools ];
+pyproject = true;
 }

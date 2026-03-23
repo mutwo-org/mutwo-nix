@@ -30,4 +30,6 @@ in
       runHook postCheck
     '';
     doCheck = true;
+    pyproject = true;
+    build-system = [ setuptools ];
   }

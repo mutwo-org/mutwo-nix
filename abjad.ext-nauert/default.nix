@@ -20,4 +20,6 @@ in
     propagatedBuildInputs = [
       abjad
     ];
-  }
+    build-system = [ setuptools ];
+    pyproject = true;
+}

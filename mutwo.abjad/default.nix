@@ -51,4 +51,6 @@ in
     '';
     doCheck = true;
     build-cache-failures = true;
+    pyproject = true;
+    build-system = [ setuptools ];
   }

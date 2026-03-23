@@ -12,4 +12,6 @@ buildPythonPackage rec {
   };
   doCheck = true;
   propagatedBuildInputs = [ future ];
+  build-system = [ setuptools ];
+  pyproject = true;
 }
