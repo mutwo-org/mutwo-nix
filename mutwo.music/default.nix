@@ -26,7 +26,6 @@ in
       mutwo-core
       python-ranges
       sympy
-      epitran
     ];
     checkPhase = ''
       runHook preCheck
