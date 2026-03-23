@@ -29,6 +29,7 @@ in
       rev = origin.rev;
       sha256 = origin.sha256;
     };
+    nativeBuildInputs = [ setuptools wheel ];
     nativeCheckInputs = [ pytest ];
     checkInputs = [ pytest ];
     propagatedBuildInputs = [ 
